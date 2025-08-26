@@ -57,21 +57,21 @@ Uma fintech está desenvolvendo um sistema para facilitar a **análise de crédi
 ## 🏗 Estrutura Recomendada
 
      +---------------------------+
-     |       Controllers        |  --> Camada de Entrada (HTTP)
+     |       Controllers        |  --> Camada de Entrada (HTTP) - Leo
      +---------------------------+
                  ↓
      +---------------------------+
-     |       Use Cases          |  --> Lógica de Negócio
+     |       Use Cases          |  --> Lógica de Negócio - Mayheus
      +---------------------------+
                  ↓
      +---------------------------+
-     |       Entities           |  --> Entidades do Domínio
+     |       Entities           |  --> Entidades do Domínio - Pablo
      +---------------------------+
                  ↑
      +---------------------------+
-     |     Interfaces/Ports     |  --> Interfaces de Entrada/Saída
+     |     Interfaces/Ports     |  --> Interfaces de Entrada/Saída - Denyel 
      +---------------------------+
                  ↓
      +---------------------------+
-     |     Adapters (Infra)     |  --> Implementações: DB, APIs etc.
+     |     Adapters (Infra)     |  --> Implementações: DB, APIs etc. - Samuel
      +---------------------------+
