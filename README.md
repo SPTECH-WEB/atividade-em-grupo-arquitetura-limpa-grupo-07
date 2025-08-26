@@ -61,7 +61,7 @@ Uma fintech está desenvolvendo um sistema para facilitar a **análise de crédi
      +---------------------------+
                  ↓
      +---------------------------+
-     |       Use Cases          |  --> Lógica de Negócio - Mayheus
+     |       Use Cases          |  --> Lógica de Negócio - Matheus
      +---------------------------+
                  ↓
      +---------------------------+
