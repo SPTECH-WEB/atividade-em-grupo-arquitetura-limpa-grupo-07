@@ -31,6 +31,7 @@ public class Cliente {
     private String risco;
     private int prioridade;
     private String estrategia;
+
     public Cliente(String nome, String email, String telefone, String cpf, double rendaMensal, int idade, String profissao) {
         this.id = UUID.fromString(UUID.randomUUID().toString());
         this.nome = nome;
@@ -41,6 +42,7 @@ public class Cliente {
         this.idade = idade;
         this.profissao = profissao;
     }
+}
 
 
 
