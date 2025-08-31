@@ -1,5 +1,5 @@
 package com.atlas.api_risco_credito.Interfaces;
-import com.fintech.credito.entities.Cliente;
+import com.atlas.api_risco_credito.entity.Cliente;
 
 public interface ClienteRepository {
     Cliente save(Cliente cliente);
