@@ -1,12 +1,29 @@
 package com.atlas.api_risco_credito.entity;
 
+import jakarta.persistence.*;
+import lombok.*;
 import java.util.UUID;
 
+@Entity
+@Table(name = "clientes")
+@Getter
+@Setter
+@NoArgsConstructor // Gera o construtor vazio (OBRIGATÓRIO pro JPA)
+@AllArgsConstructor // Construtor com todos os atributos
 public class Cliente {
-    private final String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
+
+    @Column(nullable = false, length = 100)
     private String nome;
+
+    @Column(nullable = false, unique = true)
     private String email;
+
     private String telefone;
+
+    @Column(nullable = false, unique = true, length = 11)
     private String cpf;
     private double rendaMensal;
     private int idade;
@@ -15,7 +32,7 @@ public class Cliente {
     private int prioridade;
     private String estrategia;
     public Cliente(String nome, String email, String telefone, String cpf, double rendaMensal, int idade, String profissao) {
-        this.id = UUID.randomUUID().toString();
+        this.id = UUID.fromString(UUID.randomUUID().toString());
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
@@ -24,33 +41,7 @@ public class Cliente {
         this.idade = idade;
         this.profissao = profissao;
     }
-    // Getters e Setters
-    public String getId() { return id; }
 
-    public String getNome() { return nome; }
 
-    public String getEmail() { return email; }
 
-    public String getTelefone() { return telefone; }
-
-    public String getCpf() { return cpf; }
-
-    public double getRendaMensal() { return rendaMensal; }
-
-    public int getIdade() { return idade; }
-
-    public String getProfissao() { return profissao; }
-
-    public String getRisco() { return risco; }
-
-    public void setRisco(String risco) { this.risco = risco; }
-
-    public int getPrioridade() { return prioridade; }
-
-    public void setPrioridade(int prioridade) { this.prioridade = prioridade; }
-
-    public String getEstrategia() { return estrategia; }
-
-    public void setEstrategia(String estrategia) { this.estrategia = estrategia; }
-}
 
