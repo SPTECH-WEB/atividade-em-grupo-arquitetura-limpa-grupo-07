@@ -57,7 +57,7 @@ Uma fintech está desenvolvendo um sistema para facilitar a **análise de crédi
 ## 🏗 Estrutura Recomendada
 
      +---------------------------+
-     |       Controllers        |  --> Camada de Entrada (HTTP) - Leo
+     |       Controllers        |  --> Camada de Entrada (HTTP) - Leo e Gabriel
      +---------------------------+
                  ↓
      +---------------------------+
