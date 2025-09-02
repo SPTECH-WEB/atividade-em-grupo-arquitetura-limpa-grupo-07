@@ -18,4 +18,10 @@ public class ClienteController {
         return clienteUseCase.criarCliente(cliente);
     }
 
+    @GetMapping("/{id}")
+    public Cliente buscarCliente(@PathVariable Long id) {
+        Cliente cliente = clienteUseCase.buscarCliente(id.toString());
+        if (cliente == null) throw new RuntimeException("Cliente não encontrado");
+        return cliente;
+    }
 }
